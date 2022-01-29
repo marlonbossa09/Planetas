@@ -1,0 +1,146 @@
+* {
+  font-family: "Lobster";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(0, 0, 0);
+}
+
+header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+}
+.loco {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.absolute {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-texto {
+  margin: -20px 25px 9px 40px;
+  top: 0;
+  right: 0;
+  display: block;
+  padding: 40px 25px 0px 25px;
+}
+
+.total {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  padding: 30px;
+  background: rgba(174, 182, 191, 0.7);
+  justify-content: center;
+  text-align: justify;
+}
+
+/*_________________________________________________________________________________________________*/
+div {
+  display: block;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 900;
+  z-index: 100;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+h1::after {
+  display: block;
+  width: 30%;
+  height: 10px;
+  content: "";
+  margin: auto;
+  background: #fff;
+}
+.contenedor-texto {
+  font-size: 20px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.54);
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 50px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#121218, #161618, #161617);
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+  section {
+    background: linear-gradient(#121218, #161618, #161617);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  h1::after {
+    display: none;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  section {
+    background: linear-gradient(#121218, #161618, #161617);
+  }
+  p {
+    font-size: 20px;
+  }
+
+  .total {
+    width: 80%;
+  }
+
+  .contenedor-texto {
+    margin: -10px 15px 4px 20px;
+    top: 0;
+    right: 0;
+    display: block;
+    padding: 20px 15px 0px 15px;
+  }
+}
